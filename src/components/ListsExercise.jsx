@@ -1,12 +1,12 @@
 import React from 'react';
+const emojis = [ '😡', '🙁', '😐', '🙂', '😁' ];
 
-const Component = props => (
+const Component =  props => (
   <div className='flex note-exercise-s'>
-    <div className='emoji'>{'😡'}</div>
-    <div className='emoji'>{'🙁'}</div>
-    <div className='emoji'>{'😐'}</div>
-    <div className='emoji'>{'🙂'}</div>
-    <div className='emoji'>{'😁'}</div>
+      <ul>
+          {emojis.map(em => <li key={em}>{em}</li> ) }
+      </ul>
+
     {/* reimplement emojis using map -> emojis [...].map(...)*/}
   </div>
 );
